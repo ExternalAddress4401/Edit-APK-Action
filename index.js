@@ -13,10 +13,10 @@ manifest = manifest.replace(
 );
 
 try {
-  fs.unlinkSync("./beatstar/res/xml/network_security_config.xml");
+  fs.unlinkSync("./apk/beatstar/res/xml/network_security_config.xml");
 } catch (e) {}
 
-let res = fs.readFileSync("./beatstar/res/values/public.xml").toString();
+let res = fs.readFileSync("./apk/beatstar/res/values/public.xml").toString();
 res = res.replace(
   '<public type="xml" name="network_security_config" id="0x7f150004" />',
   ""
