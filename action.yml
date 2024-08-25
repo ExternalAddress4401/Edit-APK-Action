@@ -1,0 +1,5 @@
+name: "Edit APK Action"
+description: "Edits portions of the APK"
+runs:
+  using: "node20"
+  main: "index.js"
